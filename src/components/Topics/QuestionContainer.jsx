@@ -11,18 +11,18 @@ const QuestionContainer = ({ ques, index, score, setScore }) => {
   // Toast
   const notify = () =>
     toast.info(correctAnswer, {
-      position: "top-center",
+      position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "colored",
+      theme: "light",
     });
   const correctAnsNotify = (ans) =>
     toast.success(`Correct: ${ans}`, {
-      position: "top-center",
+      position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -33,7 +33,7 @@ const QuestionContainer = ({ ques, index, score, setScore }) => {
     });
   const wrongAnsNotify = (ans) =>
     toast.error(`Wrong: ${ans}`, {
-      position: "top-center",
+      position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -43,13 +43,22 @@ const QuestionContainer = ({ ques, index, score, setScore }) => {
       theme: "colored",
     });
   // Handlers
+
+  // If the question is correct add +1 to score.correct
+  // else add +1 to score.incorrect also display toast
   const isCorrect = (option) => {
     if (option === correctAnswer) {
       correctAnsNotify(option);
-      setScore((score = score + 1));
+      setScore((prevState) => ({
+        ...prevState,
+        correct: +score.correct + 1,
+      }));
     } else {
       wrongAnsNotify(option);
-      setScore((score = score - 1));
+      setScore((prevState) => ({
+        ...prevState,
+        incorrect: +score.incorrect + 1,
+      }));
     }
   };
   return (

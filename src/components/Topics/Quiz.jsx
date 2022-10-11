@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import QuestionContainer from "./QuestionContainer";
+import ScoreSidebar from "./ScoreSidebar";
 
 const Quiz = () => {
   const quizInfo = useLoaderData().data;
-  const [score, setScore] = useState(0);
-  console.log(score);
+  const [score, setScore] = useState({ correct: 0, incorrect: 0 });
   return (
     <div className="text-center mt-10">
       <h2 className="text-2xl font-bold text-slate-700 pl-4">
@@ -30,7 +30,9 @@ const Quiz = () => {
           })}
         </div>
         {/* Quiz Score  */}
-        <div className="border"></div>
+        <div className="border">
+          <ScoreSidebar score={score}></ScoreSidebar>
+        </div>
       </div>
     </div>
   );

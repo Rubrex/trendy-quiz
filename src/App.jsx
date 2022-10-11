@@ -8,16 +8,16 @@ function App() {
   return (
     <div className="App">
       <ToastContainer
-        position="top-center"
+        position="bottom-right"
         autoClose={5000}
         hideProgressBar={false}
-        newestOnTop
+        newestOnTop={false}
         closeOnClick
         rtl={false}
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="colored"
+        theme="light"
       />
       <RouterProvider router={router}></RouterProvider>
     </div>
