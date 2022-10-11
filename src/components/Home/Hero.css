@@ -3,7 +3,8 @@
   /* padding: 2rem 10%; */
   height: 80vh;
   background: #f6f6f6;
-  background: url(./images/quiz_banner.jpg) no-repeat fixed right center;
+  background: url(../../assets/images/quiz_banner.jpg) no-repeat fixed right
+    center;
   background-size: cover;
   z-index: 0;
 }
