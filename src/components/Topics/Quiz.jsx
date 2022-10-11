@@ -4,7 +4,6 @@ import QuestionContainer from "./QuestionContainer";
 
 const Quiz = () => {
   const quizInfo = useLoaderData().data;
-  console.log(quizInfo);
   return (
     <div className="text-center mt-10">
       <h2 className="text-2xl font-bold text-slate-700 border-l-primaryColor border-l-8 pl-4">
