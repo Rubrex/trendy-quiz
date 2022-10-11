@@ -1,8 +1,8 @@
-##Assignment: 9
-##Project: Trendy-Quiz
+## Assignment: 9
+## Project: Trendy-Quiz
 Live Link: 
 
-## `Technologies Used :`
+## `Technologies Used`
 1. HTML
 2. CSS
 3. JS
