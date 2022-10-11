@@ -10,7 +10,7 @@ const Topics = () => {
       <h2 className="text-2xl font-bold text-slate-700 border-l-primaryColor border-l-8 pl-4">
         Select Your topic to get started.
       </h2>
-      <div className="mt-20 flex flex-grow flex-wrap justify-center lg:justify-start gap-20">
+      <div className="mt-20 flex flex-grow flex-wrap justify-center  gap-20">
         {totalQuiz.map((quiz) => {
           console.log(quiz);
           return <QuizCard key={quiz.id} quiz={quiz} />;

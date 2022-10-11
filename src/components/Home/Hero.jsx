@@ -8,7 +8,7 @@ const Hero = () => {
           Trendy QUIZ
         </h1>
         <p className="mt-4 text-2xl font-bold text-slate-700">
-          Sharpen your knowledge by taking quiz !
+          Sharpen your knowledge by taking quizzes !
         </p>
       </div>
     </div>

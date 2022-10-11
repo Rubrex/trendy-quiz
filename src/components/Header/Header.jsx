@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo_tranparent.png";
+import "./Header.css";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -20,34 +21,34 @@ const Header = () => {
         </Link>
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
-            <Link
+            <NavLink
               to="/topics"
               aria-label="Quiz Topics"
               title="Quiz Topics"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
             >
               Topics
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/statistics"
               aria-label="Statistics"
               title="Statistics"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
             >
               Statistics
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/blogs"
               aria-label="Blogs"
               title="Blogs"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
             >
               Blogs
-            </Link>
+            </NavLink>
           </li>
           <li>
             <a
@@ -118,44 +119,44 @@ const Header = () => {
                 <nav>
                   <ul className="space-y-4">
                     <li>
-                      <Link
+                      <NavLink
                         to="/topics"
                         aria-label="Our product"
                         title="Our product"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                       >
                         Topics
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link
+                      <NavLink
                         to="/statistics"
                         aria-label="Statistics"
                         title="Statistics"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                       >
                         Statistics
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link
+                      <NavLink
                         to="/blogs"
                         aria-label="Blogs"
                         title="Blogs"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                       >
                         Blogs
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to="/"
                         className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md  bg-primaryColor hover:bg-red-700 focus:shadow-outline focus:outline-none"
                         aria-label="Sign up"
                         title="Sign up"
                       >
                         Sign up
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
