@@ -1,0 +1,23 @@
+.hero-section {
+  position: relative;
+  /* padding: 2rem 10%; */
+  height: 80vh;
+  background: #f6f6f6;
+  background: url(./images/quiz_banner.jpg) no-repeat fixed right center;
+  background-size: cover;
+  z-index: 0;
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 246, 246, 0.6) 34.38%,
+    #e0e0e0 100%
+  );
+  z-index: -1;
+}

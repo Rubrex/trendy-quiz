@@ -1,9 +1,12 @@
 import React from "react";
+import Hero from "./Hero";
+import QuizCardsContainer from "./QuizCardsContainer";
 
 const Home = () => {
   return (
     <div>
-      <h2>Home</h2>
+      <Hero />
+      <QuizCardsContainer />
     </div>
   );
 };
