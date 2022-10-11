@@ -2,7 +2,7 @@
 
 ## Project: Trendy-Quiz
 
-## Live Link:
+## Live Link: https://trendy-quiz.netlify.app/
 
 ## `Technologies Used`
 
