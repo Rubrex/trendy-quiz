@@ -8,6 +8,7 @@ module.exports = {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        primaryColor: "rgb(255, 41, 77)",
         red: {
           50: "#ffebee",
           100: "#ffcdd2",
