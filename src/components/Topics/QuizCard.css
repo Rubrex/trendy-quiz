@@ -1,4 +1,5 @@
-.quiz-card {
+.quiz-card,
+.neomorph {
   border-radius: 50px;
   background: #e0e0e0;
   box-shadow: 12px 12px 24px #bebebe, -12px -12px 24px #ffffff;

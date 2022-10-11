@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./QuizCard.css";
 const QuizCard = ({ quiz }) => {
   const { name, logo, total, id } = quiz;
-  console.log(quiz);
   return (
     <div className="quiz-card overflow-hidden">
       <div>

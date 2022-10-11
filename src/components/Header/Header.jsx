@@ -25,7 +25,7 @@ const Header = () => {
               to="/quiz"
               aria-label="Quiz Topics"
               title="Quiz Topics"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
+              className="font-medium tracking-wide  transition-colors duration-200 hover:text-primaryColor"
             >
               Topics
             </NavLink>
@@ -35,7 +35,7 @@ const Header = () => {
               to="/statistics"
               aria-label="Statistics"
               title="Statistics"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
+              className="font-medium tracking-wide  transition-colors duration-200 hover:text-primaryColor"
             >
               Statistics
             </NavLink>
@@ -45,7 +45,7 @@ const Header = () => {
               to="/blogs"
               aria-label="Blogs"
               title="Blogs"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
+              className="font-medium tracking-wide  transition-colors duration-200 hover:text-primaryColor"
             >
               Blogs
             </NavLink>
@@ -123,7 +123,7 @@ const Header = () => {
                         to="/quiz"
                         aria-label="Our product"
                         title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
+                        className="font-medium tracking-wide  transition-colors duration-200 hover:text-primaryColor"
                       >
                         Topics
                       </NavLink>
@@ -133,7 +133,7 @@ const Header = () => {
                         to="/statistics"
                         aria-label="Statistics"
                         title="Statistics"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
+                        className="font-medium tracking-wide  transition-colors duration-200 hover:text-primaryColor"
                       >
                         Statistics
                       </NavLink>
@@ -143,7 +143,7 @@ const Header = () => {
                         to="/blogs"
                         aria-label="Blogs"
                         title="Blogs"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
+                        className="font-medium tracking-wide  transition-colors duration-200 hover:text-primaryColor"
                       >
                         Blogs
                       </NavLink>
