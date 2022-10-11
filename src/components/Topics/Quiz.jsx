@@ -30,7 +30,7 @@ const Quiz = () => {
           })}
         </div>
         {/* Quiz Score  */}
-        <div className="border">
+        <div className="">
           <ScoreSidebar score={score}></ScoreSidebar>
         </div>
       </div>

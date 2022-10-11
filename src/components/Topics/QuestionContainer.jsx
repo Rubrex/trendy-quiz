@@ -1,8 +1,9 @@
 import { Interweave } from "interweave";
-import React, { useState } from "react";
-import { ImEye, ImEyeBlocked } from "react-icons/Im";
-import { ToastContainer, toast } from "react-toastify";
+import React from "react";
+import { ImEye } from "react-icons/Im";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./QuestionContainer.css";
 
 const QuestionContainer = ({ ques, index, score, setScore }) => {
   const { question, options, correctAnswer } = ques;
@@ -10,7 +11,7 @@ const QuestionContainer = ({ ques, index, score, setScore }) => {
 
   // Toast
   const notify = () =>
-    toast.info(correctAnswer, {
+    toast.info(`Correct Answer: ${correctAnswer}`, {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -63,18 +64,18 @@ const QuestionContainer = ({ ques, index, score, setScore }) => {
   };
   return (
     <div className="mb-10 neomorph relative">
-      <div className="absolute top-6 right-10 cursor-pointer text-2xl">
+      <div className="absolute top-6 right-10 cursor-pointer text-3xl">
         <button onClick={notify}>
-          <ImEye />
+          <ImEye className="hover:text-red-600 text-slate-800" />
         </button>
       </div>
       <h2 className="py-5 text-2xl font-bold">Quiz: {index}</h2>
-      <Interweave className="font-medium py-5" content={question}></Interweave>
-      <div className="grid grid-col-1 lg:grid-cols-2 gap-4 w-5/6 mx-auto py-8">
+      <Interweave className="font-medium py-5 " content={question}></Interweave>
+      <div className="grid grid-col-1 lg:grid-cols-2 gap-5 w-5/6 mx-auto py-8">
         {options.map((option) => (
           <div
             key={option}
-            className=" p-2 border-slate-500 py-5 rounded-md border-2 hover:border-primaryColor hover:text-primaryColor cursor-pointer"
+            className="neomorph-btn text-base  border-slate-500 py-5 px-4 rounded-md border-1 hover:border-primaryColor hover:text-primaryColor cursor-pointer"
             onClick={() => isCorrect(option)}
           >
             {option}

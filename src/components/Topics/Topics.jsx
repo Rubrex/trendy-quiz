@@ -6,7 +6,7 @@ const Topics = () => {
   const totalQuiz = useLoaderData().data;
   return (
     <div className="container mx-auto mt-10">
-      <h2 className="text-2xl font-bold text-slate-700 border-l-primaryColor border-l-8 pl-4">
+      <h2 className="text-2xl font-bold text-slate-700 border-l-primaryColor border-l-8 pl-2 ">
         Select Your topic to get started.
       </h2>
       <div className="mt-20 flex flex-grow flex-wrap justify-center  gap-20">
