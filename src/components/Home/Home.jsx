@@ -4,7 +4,7 @@ import QuizCardsContainer from "./QuizCardsContainer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="z-20">
       <Hero />
       <QuizCardsContainer />
     </div>

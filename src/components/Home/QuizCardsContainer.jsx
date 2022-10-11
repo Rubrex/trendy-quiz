@@ -1,11 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Topics from "../Topics/Topics";
 
 const QuizCardsContainer = () => {
   return (
-    <div className="container mx-auto my-10">
-      <div className="mt-10">
+    <div className="container mx-auto">
+      <div className="my-20">
         <Outlet />
       </div>
     </div>
