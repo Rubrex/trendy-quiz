@@ -13,7 +13,7 @@ const QuizCard = ({ quiz }) => {
         <h3 className="text-xl text-bold">{name}</h3>
         <p>Total Quizzes: {total}</p>
       </div>
-      <Link to={`/${name}`}>
+      <Link to={`/quiz/${id}`}>
         <button className="flex justify-center w-full py-2 mt-3 bg-primaryColor font-medium text-white text-xl">
           Jump In
         </button>

@@ -22,7 +22,7 @@ const Header = () => {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <NavLink
-              to="/topics"
+              to="/quiz"
               aria-label="Quiz Topics"
               title="Quiz Topics"
               className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
@@ -120,7 +120,7 @@ const Header = () => {
                   <ul className="space-y-4">
                     <li>
                       <NavLink
-                        to="/topics"
+                        to="/quiz"
                         aria-label="Our product"
                         title="Our product"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
