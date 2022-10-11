@@ -1,0 +1,8 @@
+.quiz-card {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 12px 12px 24px #bebebe, -12px -12px 24px #ffffff;
+}
+.quiz-card img {
+  border-radius: 50px 50px 0 0;
+}
