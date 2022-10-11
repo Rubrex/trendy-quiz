@@ -75,7 +75,7 @@ const QuestionContainer = ({ ques, index, score, setScore }) => {
         {options.map((option) => (
           <div
             key={option}
-            className="neomorph-btn text-base  border-slate-500 py-5 px-4 rounded-md border-1 hover:border-primaryColor hover:text-primaryColor cursor-pointer"
+            className="neomorph-btn text-base  border-slate-500 py-5 px-4  border-1 hover:border-primaryColor hover:text-primaryColor cursor-pointer"
             onClick={() => isCorrect(option)}
           >
             {option}
