@@ -1,7 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useRouteError } from "react-router-dom";
 import logo from "../../assets/images/logo_tranparent.png";
 const NotFound = () => {
+  const error = useRouteError();
+  console.log(error);
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <div className="flex items-center">

@@ -7,6 +7,11 @@ import Quiz from "../components/Topics/Quiz";
 import Topics from "../components/Topics/Topics";
 import Main from "../layout/Main";
 
+// loaders
+// const homeLoadersTopicsQuiz = () => {
+//   loader:
+// }
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -16,21 +21,12 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-
         children: [
           {
             path: "/",
             element: <Topics />,
             loader: async () =>
               fetch("https://openapi.programming-hero.com/api/quiz"),
-            children: [
-              {
-                path: ":id",
-                element: <Quiz />,
-                loader: async ({ params }) =>
-                  fetch(`https://openapi.programming-hero.com/api/quiz/1`),
-              },
-            ],
           },
         ],
       },
@@ -44,16 +40,21 @@ export const router = createBrowserRouter([
       {
         path: "/quiz/:id",
         element: <Quiz></Quiz>,
-        loader: async ({ params }) =>
-          fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
+        loader: async ({ params }) => {
+          console.log(params);
+          return fetch(
+            `https://openapi.programming-hero.com/api/quiz/${params.id}`
+          );
+        },
       },
+
       {
-        path: "/statistics",
+        path: "statistics",
         element: <Statistics />,
         loader: async () =>
           fetch("https://openapi.programming-hero.com/api/quiz"),
       },
-      { path: "/blogs", element: <Blogs /> },
+      { path: "blogs", element: <Blogs /> },
     ],
   },
 ]);

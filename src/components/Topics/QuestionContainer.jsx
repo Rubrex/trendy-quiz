@@ -69,13 +69,16 @@ const QuestionContainer = ({ ques, index, score, setScore }) => {
           <ImEye className="hover:text-red-600 text-slate-800" />
         </button>
       </div>
-      <h2 className="py-5 text-2xl font-bold">Quiz: {index}</h2>
-      <Interweave className="font-medium py-5 " content={question}></Interweave>
+      <h2 className="py-5  text-2xl font-bold">Quiz: {index}</h2>
+      <Interweave
+        className="font-medium py-5 interweave"
+        content={question}
+      ></Interweave>
       <div className="grid grid-col-1 lg:grid-cols-2 gap-5 w-5/6 mx-auto py-8">
         {options.map((option) => (
           <div
             key={option}
-            className="neomorph-btn text-base  border-slate-500 py-5 px-4  border-1 hover:border-primaryColor hover:text-primaryColor cursor-pointer"
+            className="neomorph-btn text-sm font-medium  border-slate-500 py-5 px-4  border-1  hover:text-red-600 cursor-pointer"
             onClick={() => isCorrect(option)}
           >
             {option}

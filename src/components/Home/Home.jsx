@@ -1,12 +1,16 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import Hero from "./Hero";
-import QuizCardsContainer from "./QuizCardsContainer";
 
 const Home = () => {
   return (
     <div className="z-20">
       <Hero />
-      <QuizCardsContainer />
+      <div className="container mx-auto">
+        <div className="my-20">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 };

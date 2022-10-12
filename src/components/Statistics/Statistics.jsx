@@ -12,7 +12,7 @@ const Statistics = () => {
   });
   return (
     <div className="mt-10 ">
-      <h2 className="text-2xl font-semibold text-center mb-10 px-4">
+      <h2 className="text-2xl font-semibold text-center mb-12 px-4  underline underline-offset-8 ">
         Number of questions in each catagories
       </h2>
       <div className="w-2/3 h-52 mx-auto">

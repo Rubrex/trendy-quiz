@@ -52,14 +52,21 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <a
-                href="/"
+              <NavLink
+                to="/error"
+                className="font-medium tracking-wide  transition-colors duration-200 hover:text-primaryColor"
+              >
+                Error
+              </NavLink>
+            </li>
+            <li>
+              <Link
+                to="/"
                 className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primaryColor hover:bg-red-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
                 title="Sign up"
               >
                 Sign up
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="lg:hidden">

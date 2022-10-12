@@ -18,7 +18,7 @@ const Blogs = () => {
   ];
   return (
     <div className="my-10 container mx-auto">
-      <h2 className="text-2xl text-slate-800 font-medium">
+      <h2 className="text-2xl text-slate-700 font-semibold text-center mb-12 px-4  underline underline-offset-8 ">
         Questions with Answers
       </h2>
       <div className="grid md:grid-cols-2 gap-10 mt-10">
