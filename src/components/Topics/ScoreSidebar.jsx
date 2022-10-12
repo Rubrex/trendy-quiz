@@ -7,26 +7,28 @@ const ScoreSidebar = ({ score }) => {
         ScoreBoard
       </h2>
       <table className="">
-        <tr>
-          <td>
-            <p className="float-left pr-1 font-medium">Correct Ans:</p>
-          </td>
-          <td>
-            <p className=" font-semibold text-lg text-green-800 hop-in">
-              {score.correct}
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p className="float-left pr-1 font-medium">Incorrect Ans:</p>
-          </td>
-          <td>
-            <p className=" font-semibold text-lg text-red-800 hop-in">
-              {score.incorrect}
-            </p>
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>
+              <p className="float-left pr-1 font-medium">Correct Ans:</p>
+            </td>
+            <td>
+              <p className=" font-semibold text-lg text-green-800 hop-in">
+                {score.correct}
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p className="float-left pr-1 font-medium">Incorrect Ans:</p>
+            </td>
+            <td>
+              <p className=" font-semibold text-lg text-red-800 hop-in">
+                {score.incorrect}
+              </p>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );

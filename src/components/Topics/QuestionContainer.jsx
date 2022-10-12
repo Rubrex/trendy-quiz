@@ -1,5 +1,5 @@
 import { Interweave } from "interweave";
-import React from "react";
+import React, { useState } from "react";
 import { ImEye } from "react-icons/Im";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,7 +8,7 @@ import "./QuestionContainer.css";
 const QuestionContainer = ({ ques, index, score, setScore }) => {
   const { question, options, correctAnswer } = ques;
   // States
-
+  const [isAnswered, setAnswered] = useState(false);
   // Toast
   const notify = () =>
     toast.info(`Correct Answer: ${correctAnswer}`, {
@@ -47,21 +47,26 @@ const QuestionContainer = ({ ques, index, score, setScore }) => {
 
   // If the question is correct add +1 to score.correct
   // else add +1 to score.incorrect also display toast
-  const isCorrect = (option) => {
+  const isCorrect = (option, e) => {
+    setAnswered(!isAnswered);
+    console.log(isAnswered);
     if (option === correctAnswer) {
       correctAnsNotify(option);
+      e.target.classList.add("corrrect_ans");
       setScore((prevState) => ({
         ...prevState,
         correct: +score.correct + 1,
       }));
     } else {
       wrongAnsNotify(option);
+      e.target.classList.add("incorrect_ans");
       setScore((prevState) => ({
         ...prevState,
         incorrect: +score.incorrect + 1,
       }));
     }
   };
+
   return (
     <div className="mb-10 neomorph relative">
       <div className="absolute top-6 right-10 cursor-pointer text-3xl">
@@ -78,8 +83,8 @@ const QuestionContainer = ({ ques, index, score, setScore }) => {
         {options.map((option) => (
           <div
             key={option}
-            className="neomorph-btn text-sm font-medium  border-slate-500 py-5 px-4  border-1  hover:text-red-600 cursor-pointer"
-            onClick={() => isCorrect(option)}
+            className="neomorph-btn text-sm font-medium  border-slate-500 py-5 px-4  border-1  hover:text-sky-700 cursor-pointer"
+            onClick={(e) => isAnswered || isCorrect(option, e)}
           >
             {option}
           </div>

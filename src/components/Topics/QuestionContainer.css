@@ -11,3 +11,12 @@
 .interweave > p {
   padding: 0 1.5rem;
 }
+
+.corrrect_ans {
+  background: linear-gradient(145deg, #468656, #6ca079);
+  color: white;
+}
+.incorrect_ans {
+  background: linear-gradient(145deg, #864949, #976e6e);
+  color: white;
+}
