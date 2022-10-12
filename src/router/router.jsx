@@ -7,11 +7,6 @@ import Quiz from "../components/Topics/Quiz";
 import Topics from "../components/Topics/Topics";
 import Main from "../layout/Main";
 
-// loaders
-// const homeLoadersTopicsQuiz = () => {
-//   loader:
-// }
-
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -31,14 +26,14 @@ export const router = createBrowserRouter([
         ],
       },
       {
-        path: "/quiz",
+        path: "quiz",
         element: <Topics />,
         loader: async () =>
           fetch("https://openapi.programming-hero.com/api/quiz"),
         children: [],
       },
       {
-        path: "/quiz/:id",
+        path: "quiz/:id",
         element: <Quiz></Quiz>,
         loader: async ({ params }) => {
           console.log(params);

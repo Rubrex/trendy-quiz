@@ -51,14 +51,7 @@ const Header = () => {
                 Blogs
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/error"
-                className="font-medium tracking-wide  transition-colors duration-200 hover:text-primaryColor"
-              >
-                Error
-              </NavLink>
-            </li>
+
             <li>
               <Link
                 to="/"
